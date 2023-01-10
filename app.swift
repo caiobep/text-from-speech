@@ -28,7 +28,7 @@ func getTextFromAudioFile(_ audioFile: URL) async throws -> String {
 
 func main() async {
     if CommandLine.arguments.count != 2 || CommandLine.arguments[1].contains("-h") {
-        print("Usage: app.swift <audio file>")
+        print("Usage: \(CommandLine.arguments[0]) <audio file>")
         exit(1)
     }
 
